@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dynamic Book Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Book Library</h1>
+      <p>Discover reviews and tips for books, curated by category</p>
+      <input id="searchInput" type="text" placeholder="Search by title or author..." />
+    </div>
+  </header>
+
+  <main>
+    <!-- Book Sections -->
+    <section class="category" id="fiction">
+      <h2 onclick="toggleSection(this)">Fiction ⯆</h2>
+      <div class="book-container"></div>
+    </section>
+
+    <section class="category" id="nonfiction">
+      <h2 onclick="toggleSection(this)">Non-Fiction ⯆</h2>
+      <div class="book-container"></div>
+    </section>
+
+    <section class="category" id="history">
+      <h2 onclick="toggleSection(this)">History ⯆</h2>
+      <div class="book-container"></div>
+    </section>
+
+    <section class="category" id="comics">
+      <h2 onclick="toggleSection(this)">Comics ⯆</h2>
+      <div class="book-container"></div>
+    </section>
+
+    <section class="category" id="novel">
+      <h2 onclick="toggleSection(this)">Novels ⯆</h2>
+      <div class="book-container"></div>
+    </section>
+
+    <section class="category" id="horror">
+      <h2 onclick="toggleSection(this)">Horror ⯆</h2>
+      <div class="book-container"></div>
+    </section>
+
+    <section class="category" id="kids">
+      <h2 onclick="toggleSection(this)">Kids ⯆</h2>
+      <div class="book-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Book Library. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

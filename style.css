@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #fefefe;
+    color: #333;
+  }
+  
+  header {
+    padding: 40px 20px 20px;
+    background-color: #74bdee;
+    text-align: center;
+    border-bottom: 1px solid #bc60e7;
+  }
+  
+  .header-content h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .header-content p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  #searchBar {
+    margin-top: 20px;
+    padding: 10px;
+    width: 50%;
+    max-width: 400px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  section h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #222;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  section h2:hover {
+    color: #ff6f00;
+  }
+  
+  .book-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .book-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .book-container::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 10px;
+  }
+  
+  .book-card {
+    flex: 0 0 auto;
+    width: 140px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .book-card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  .book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .book-card h4 {
+    font-size: 0.95rem;
+    margin: 8px 0 4px;
+  }
+  
+  .book-card p {
+    font-size: 0.75rem;
+    color: #777;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    margin-top: 30px;
+  }
+  
+  .category .book-container.collapsed {
+    display: none;
+  }
+  .category .book-container.expanded {
+    display: flex;
+  }
+  .category h2 {
+    cursor: pointer;
+  }
